@@ -1,0 +1,16 @@
+.Header {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: rgb(226, 224, 224);
+  font-size: 2em;
+  font-weight: 600;
+  min-width: 100vw;
+  min-height: 10vh;
+  padding-left: 4%;
+}
+
+.Header > a {
+  color: rgb(226, 224, 224);
+  text-decoration: none;
+}
