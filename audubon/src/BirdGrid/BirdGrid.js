@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Img from 'react-image';
 
 import '../Bird/Bird';
-
 import './BirdGrid.css';
 
 function BirdGrid(props) {

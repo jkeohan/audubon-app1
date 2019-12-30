@@ -85,8 +85,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      birds: birds
+      birds: birds,
+      selectedBird: null,
     }
+  }
+
+  setBird = bird => {
+    this.setState({selectedBird: bird});
   }
 
   render() {
@@ -98,7 +103,7 @@ class App extends Component {
           <Route
             path="/birds/:bird"
             render={props => (
-            <Bird {...props}/>
+            <Bird setBird={this.setBird} {...this.state} {...props}/>
             )}
           />
           <Route

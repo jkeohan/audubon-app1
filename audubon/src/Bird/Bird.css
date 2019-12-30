@@ -1,3 +1,58 @@
-.Bird{
-  
+.Bird {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "birdImage birdData";
+  align-items: center;
+  justify-items: center;
+  padding-top: 100px;
+}
+
+.birdImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: birdImage;
+}
+
+.birdImage > Img {
+  height: 250px;
+  width: auto;
+}
+
+.birdData {
+  display: flex;
+  flex-direction: column;
+  grid-area: birdData;
+  max-width: 450px;
+}
+
+.birdData > h1 {
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+
+.birdData > h2 {
+  padding-top: 0;
+  margin-top: 0;
+  font-style: italic;
+  font-size: .9em;
+  color: gray;
+}
+
+.birdData > h3 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+birdData > a {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px;
+  text-decoration: none;
+  align-content: center;
+  justify-content: center;
 }
